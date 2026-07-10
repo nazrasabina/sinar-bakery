@@ -1,0 +1,331 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins, sans-serif;
+}
+
+body{
+    background:#fffaf5;
+}
+.deskripsi{
+    font-size: 18px;
+    margin-top: 15px;
+    color: white;
+    max-width: 600px;
+}
+.btn-beli{
+    display:inline-block;
+    background:#4b2412;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+    margin:10px 0;
+    font-weight:bold;
+    width: fit-content;
+}
+/* Header */
+header{
+    background:#d97706;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero */
+.hero{
+    height:600px;
+    background:linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)),
+    url('logo_bakery.jpeg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-family: Georgia, serif;
+    font-size:60px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:20px;
+    font-family: Poppins sans-serif;
+}
+
+.btn{
+    margin-top:20px;
+    background:saddlebrown;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-family: Poppins sans-serif;
+}
+
+/* Produk */
+.produk{
+    width: 100%;
+    padding:60px 50px;
+}
+
+.produk h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr );
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+}
+
+.card p{
+    padding:0 15px 15px;
+}
+.card a{
+    margin-top: auto;
+}
+
+/* Tentang */
+.tentang{
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    padding:20px;
+    background:white;
+    text-align:center;
+}
+
+.tentang h2{
+    margin-bottom:30px;
+}
+
+.tentang h3
+margin-top: 30px;
+margin-bottom: 15px;
+}
+.tentang p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.tentang ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.tentang li {
+    margin: 10px 0;
+}
+
+
+/* Kontak */
+.kontak{
+    padding:60px;
+    background:#fef3c7;
+    text-align:center;
+}
+
+.kontak h2{
+    margin-bottom:20px;
+}
+
+.kontak p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    background:#d97706;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+}
+
+.logo-area img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:10px;
+
+.back{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.back a{
+    text-decoration: none;
+    background-color: #d97706;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.back a:hover{
+    background-color: #b45309;
+
+.detail-produk{
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.detail-produk img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+}
+
+.detail-produk h1{
+    margin-bottom: 20px;
+}
+
+.detail-produk h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.detail-produk p{
+    width: 350px;
+    margin: 0 auto 25px auto;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.detail-produk .btn{
+    display: inline-block;
+    margin: 8px;
+
+.tombol-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+body{
+    background:white;
+    text-align:center;
+    font-family:Arial;
+    margin-top:100px;
+}
+
+.check{
+    width:150px;
+    height:150px;
+    background:green;
+    color:white;
+    border-radius:50%;
+    font-size:80px;
+    line-height:150px;
+    margin:auto;
+
+    animation:gerak 1s infinite alternate;
+}
+
+@keyframes gerak{
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.1);
+    }
+}
+
+a{
+    display:inline-block;
+    margin-top:30px;
+    padding:10px 20px;
+    background:brown;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+    display:inline-block;
+    margin-top:30px;
+    padding:10px 20px;
+    background:brown;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.quantity-box{
+    margin:15px 0;
+}
+
+.quantity-box button{
+    width:30px;
+    height:30px;
+    background:brown;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+.quantity-box input{
+    width:40px;
+    text-align:center;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detail donat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="detail-produk">
+
+    <h1>donat</h1>
+
+    <img src="roti2.jpeg" alt="donat" width="300">
+
+    <h3>Rp 35.000 / kotak</h3>
+
+    <p>
+        Donat lembut dengan tekstur empuk dan rasa yang pas di setiap gigitan.<br>
+        Dibuat dari bahan-bahan berkualitas dan diolah dengan proses yang higienis,<br>
+        menghasilkan donat yang mengembang sempurna. Cocok dinikmati sebagai camilan, teman minum kopi atau teh<br>
+        maupun sajian untuk berbagai acara.<br>
+    </p>
+
+    <br>
+
+    <label>Jumlah:</label>
+
+    <button onclick="kurang()">-</button>
+
+    <input type="text" id="jumlah" value="1" readonly>
+
+    <button onclick="tambah()">+</button>
+</div>
+
+<br><br>
+
+    <a href="sukses.html" class="btn btn-warning">
+        Buat pesanan
+    </a>
+
+    <br><br><br>
+
+    <a href="form_produk.html" class="btn btn-secondary">
+        Kembali ke Produk
+    </a>
+
+</section>
+
+<script>
+function tambah() {
+    let jumlah = document.getElementById("jumlah");
+    jumlah.value = parseInt(jumlah.value) + 1;
+}
+
+function kurang() {
+    let jumlah = document.getElementById("jumlah");
+
+    if (jumlah.value > 1) {
+        jumlah.value = parseInt(jumlah.value) - 1;
+    }
+}
+</script>
+
+</body>
+</html>

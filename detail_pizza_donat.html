@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza donat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="detail-produk">
+
+    <h1>Pizza donat</h1>
+
+    <img src="roti5.jpeg" alt="pizza donat" width="350">
+
+    <h3>Rp 35.000</h3>
+
+    <p>Perpaduan unik antara kelembutan adonan donat dan topping ala pizza yang gurih. Dilengkapi saus<br>
+     keju, serta aneka topping pilihan yang memberikan sensasi rasa lezat di setiap gigitan.<br>
+      Cocok sebagai camilan maupun menu praktis untuk segala usia.<br>
+    </p>
+
+    <br>
+
+    <label>Jumlah:</label>
+
+    <button onclick="kurang()">-</button>
+
+    <input type="text" id="jumlah" value="1" readonly>
+
+    <button onclick="tambah()">+</button>
+</div>
+
+<br><br>
+
+    <a href="sukses.html" class="btn btn-warning">
+        Buat pesanan
+    </a>
+
+    <br><br><br>
+
+    <a href="form_produk.html" class="btn btn-secondary">
+        Kembali ke Produk
+    </a>
+
+</section>
+
+<script>
+function tambah() {
+    let jumlah = document.getElementById("jumlah");
+    jumlah.value = parseInt(jumlah.value) + 1;
+}
+
+function kurang() {
+    let jumlah = document.getElementById("jumlah");
+
+    if (jumlah.value > 1) {
+        jumlah.value = parseInt(jumlah.value) - 1;
+    }
+}
+</script>
+
+</body>
+</html>

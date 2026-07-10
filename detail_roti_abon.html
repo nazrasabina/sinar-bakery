@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detail Roti Abon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="detail-produk">
+
+    <h1>Roti Abon</h1>
+
+    <img src="roti1.jpeg" alt="Roti Abon" width="350">
+
+    <h3>Rp 10.000 / pcs</h3>
+
+    <p>
+       Roti lembut dengan isian melimpah dan taburan abon gurih yang kaya rasa.<br>
+       Perpaduan tekstur empuk dan cita rasa gurih-manis menjadikan roti ini cocok<br>
+        dinikmati sebagai camilan maupun teman sarapan.<br>
+    </p>
+
+    <br>
+
+    label>Jumlah:</label>
+
+    <button onclick="kurang()">-</button>
+
+    <input type="text" id="jumlah" value="1" readonly>
+
+    <button onclick="tambah()">+</button>
+</div>
+
+<br><br>
+
+    <a href="sukses.html" class="btn btn-warning">
+        Buat pesanan
+    </a>
+
+    <br><br><br>
+
+    <a href="form_produk.html" class="btn btn-secondary">
+        Kembali ke Produk
+    </a>
+
+</section>
+
+<script>
+function tambah() {
+    let jumlah = document.getElementById("jumlah");
+    jumlah.value = parseInt(jumlah.value) + 1;
+}
+
+function kurang() {
+    let jumlah = document.getElementById("jumlah");
+
+    if (jumlah.value > 1) {
+        jumlah.value = parseInt(jumlah.value) - 1;
+    }
+}
+</script>
+
+</body>
+</html>

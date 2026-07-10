@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detail bika ambon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="detail-produk">
+
+    <h1>Bika ambon</h1>
+
+    <img src="roti4.jpeg" alt="bika ambon" width="350">
+
+    <h3>Rp 60.000</h3>
+
+    <p>
+        Roti lembut dengan taburan abon gurih yang lezat dan<br>
+        menggugah selera. Dibuat dari bahan berkualitas dan<br>
+        cocok dinikmati kapan saja.<br>
+    </p>
+
+    <br>
+    
+    <label>Jumlah:</label>
+
+    <button onclick="kurang()">-</button>
+
+    <input type="text" id="jumlah" value="1" readonly>
+
+    <button onclick="tambah()">+</button>
+</div>
+
+<br><br>
+
+    <a href="sukses.html" class="btn btn-warning">
+        Buat pesanan
+    </a>
+
+    <br><br><br>
+
+    <a href="form_produk.html" class="btn btn-secondary">
+        Kembali ke Produk
+    </a>
+
+</section>
+
+<script>
+function tambah() {
+    let jumlah = document.getElementById("jumlah");
+    jumlah.value = parseInt(jumlah.value) + 1;
+}
+
+function kurang() {
+    let jumlah = document.getElementById("jumlah");
+
+    if (jumlah.value > 1) {
+        jumlah.value = parseInt(jumlah.value) - 1;
+    }
+}
+</script>
+
+</body>
+</html>
